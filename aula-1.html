@@ -1,71 +1,189 @@
-<html>
-    <head>
-    <meta charset="utrf-8">
-    <title>Programação Comecial</title>
-    <script src ="js/funcoes.js"></script>
-    <link rel = "stylesheet" type="test/css" href="css/styles.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-    <body>
-        <h1>Primeiro cabeçalho</h1>
-        <h2>Primeiro cabeçalho</h2>
-        <h3>Primeiro cabeçalho</h3>
-        <h4>Primeiro cabeçalho</h4>
-        <h5>Primeiro cabeçalho</h5>
-        <h6>Primeiro cabeçalho</h6>
 
-        <p>
-            Primeiro Paragrafo
-        </p>
-        <img src="C:\Users\adaoa\Documents\UFT\2020,1\git\programa-oComecial\img\1.jpg" title="primeira imagem" height="80" width="80">
-        <a href="http://www.uft.edu.br/" target="_blank"></a>
-        <h2>Lista ondenada</h2>
-        <ol>
-            <li>Item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-        </ol>
-        <ul>
-            <li>Item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-        </ul>
-        <table>
-            <caption>Descrição da tabela</caption>
-            <thead>
-                <th>Coluna 1</th>
-                <th>Coluna 2</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Linha 1 - Coluna 1</td>
-                    <td>Linha 1 - Coluna 2</td>
-                </tr>
-                <tr>
-                    <td>linha 2 - Coluna 1 </td>
-                    <td>linha 2 - Coluna 2</td>
-                </tr>
-            </tbody>
-        </table>
-        <form action ="/cadastro/" method="post">
-         login:<input type="text" name="login" placeholder="Digite seu login">
-         senha:<input type ="password" name ="senha">
-        </form>
-        <br />
-        
 
-        <input type="radio" name="sexo" value="1" checked> Masculino
-        <input type="radio" name="sexo" value="2"> Feminino
-        <br />
+  <head>
+    <meta charset="utf-8">
+    <title>Programação Comercial</title>
+    <script src="js-funcoes.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
 
-        <input type="checkbox" name="veiculo1" value="bike">Eu tenho uma bike
-        <input type="checkbox" name="veiculo2" value="Carro">Eu tenho um Carro
-          
 
-        <a href="https://www.w3schools.com/html/html_editors.asp" target="_blank">
-        Outros elementos
-        </a>
 
-    </body>
+  <body>
+
+
+    <h1>Primeiro Cabeçalho</h1>
+    <h2>Segundo Cabeçalho</h2>
+    <h3>Terceiro Cabeçalho</h3>
+    <h4>Quarto Cabeçalho</h4>
+    <h5>Quinto Cabeçalho</h5>
+    <h6>Sexto Cabeçalho</h6>
+
+
+    <p>Primeiro Parágrafo</p>
+
+
+    <h2>Imagem</h2>
+    <img src="img/amazon.png" title="Primeira Imagem" width="200">
+
+
+    <h2>Img</h2>
+    <a href="http://www.primevideo.com" target="_blank">
+      Link Prime
+    </a>
+
+
+    <h2>Lista Ordenada</h2>
+    <ol>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ol>
+
+
+    <h2>Lista Não Ordenada</h2>
+    <ul>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+
+
+    <h2>Tabelas</h2>
+    <table>
+      <caption>Descrição da tabela</caption>
+      <thead>
+        <tr>
+          <th>Coluna 1</th>
+          <th>Coluna 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Linha 1 - coluna 1</td>
+          <td>Linha 1 - coluna 2</td>
+        </tr>
+        <tr>
+          <td>Linha 2 - coluna 1</td>
+          <td>Linha 2 - coluna 2</td>
+        </tr>
+        <tr>
+          <td>Linha 3 - coluna 1</td>
+          <td>Linha 3 - coluna 2</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <h2>Form login e senha</h2>
+    <form action="/cadastro/" method="post">
+      Login: <input type="text" name="login" placeholder="Login">
+      Senha: <input type="password" name="sanha">
+
+
+      <h2>Radio</h2>
+      <input type="radio" name="sexo" value="1" checked>Masculino
+      <input type="radio" name="sexo" value="2">Feminino
+
+
+      <h2>Checkbox</h2>
+      <input type="checkbox" name="veiculo1" value="bike">Bike
+      <input type="checkbox" name="veiculo2" value="car">Car
+
+
+      <h2>Select</h2>
+      Curso:
+      <select name="curso">
+        <option value="1">Ciência da Computação</option>
+        <option value="2">Design</option>
+        <option value="3">Pedagogia</option>
+        <option value="4">Letras</option>
+      </select>
+
+
+      <h2>Texto com área > uma linha</h2>
+      Mensagem: <br>
+      <textarea name="message" rows="10" cols="30"></textarea>
+
+
+      <h2>Campo de número</h2>
+      Idade: <br>
+      <input type="number" name="age" value="30" min="0" max="100" step="1">
+
+
+      <h2>Data</h2>
+      Data de nascimento: <br>
+      <input type="date" name="data-nascimento" min="2000-01-02">
+
+
+      <h2>Auto complete</h2>
+      <input list="Cidades">
+      <datalist id="Cidades">
+        <option> Palmas</option>
+        <option> Natividade</option>
+        <option> Arraias</option>
+        <option> Dianópolis</option>
+        <option> Novo Alegre</option>
+        <option> Aurora</option>
+        <option> Paranã</option>
+        <option> Almas</option>
+        <option> Peixes</option>
+      </datalist>
+
+
+      <h2>Hidden</h2>
+      <!--elemento oculto para repassar info sem que o usuário veja-->
+      <input type="hidden" name="country" value="Brasil">
+
+
+      <h2>Botões</h2>
+      <input type="reset" value="Limpar">
+      <!-- reseta o form--><br>
+      <input type="submit" value="Enviar">
+      <!-- submete/envia as infos--><br>
+      <button type="button" onclick="alert('Hello World')">Click me</button>
+
+
+
+      <h2>Div e Span</h2>
+
+      <div id="area-mensagens">Elementos</div> de bloco
+      <br><br>
+      Elementos <span class="destaque">de</span> linha
+
+
+    </form>
+
+
+
+    <h2>Formatação de texto</h2>
+    <b>Negrito b</b>
+    <br>
+    <strong>Negrito strong</strong>
+    <br>
+    <i>itálico i</i>
+    <br>
+    <em>itélico em</em>
+    <br>
+    <small>pequeno</small>
+    <br>
+    <mark>marca-texto</mark>
+    <br>
+    <del>Deletado</del>
+    <br>
+    <ins>sublinhado</ins>
+    <br>
+    A<sub>em baixo</sub>
+    <br>
+    A<sup>em cima</sup>
+
+
+
+
+  </body>
+
 </html>
